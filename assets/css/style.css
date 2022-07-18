@@ -74,11 +74,21 @@ ul{
 }
 
 .logo {
+  height: 180px;
+  width: 180px;
   position: absolute;
-  background-color: var(--primary-blue);
+  background-color: hsla(255, 0%, 100%, .344);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  padding: 1rem;
+  border-radius: 100%;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+
+.logo img{
+  width: 100%;
+  /* height: 100%; */
 }
 
 #contact {
@@ -300,6 +310,7 @@ ul{
 .card-img {
   width: 100%;
   position: relative;
+  margin-bottom: 10px;
 }
 
 .card-img-p {
@@ -338,6 +349,7 @@ ul{
 }
 
 .name {
+  font-size: 1.5rem;
   font-weight: normal;
 }
 
@@ -571,11 +583,19 @@ ul{
 }
 
 .popup-close-btn{
+  display: flex;
+  align-items: center;
   cursor: pointer;
   color: #333333;
   background-color: var(--primary-blue);
 }
 
+.popup-close-btn span{
+  font-size: 1.1rem;
+  color: var(--white1);
+  /* background-color: red; */
+  display: inline-block;
+}
 /* work section ends */
 
 
@@ -896,6 +916,10 @@ ul{
 }
 
 @media (max-width: 800px) {
+  .logo {
+    height: 130px;
+    width: 130px;
+  }
   .row-section {
     flex-direction: column;
   }
