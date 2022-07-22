@@ -73,6 +73,8 @@ ul{
   background-color: var(--primary-blue) !important;
 }
 
+
+
 .logo {
   height: 180px;
   width: 180px;
@@ -84,12 +86,83 @@ ul{
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+  cursor: pointer;
 }
 
 .logo img{
   width: 100%;
+  /* display: none; */
   /* height: 100%; */
 }
+
+@keyframes logo-rotate{
+  from{
+    /* width: 0;
+    height: 0; */
+  opacity: 0;
+  }
+  to{
+    opacity: 1;
+  }
+}
+
+.logo-links{
+  animation: logo-rotate 1.5s;
+  display: none;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  /* background-color: var(--white1); */
+  border-radius: 100%;
+}
+
+.logo-links a{
+  font-size: 2rem;
+  color: var(--primary-dark);
+  position: absolute;
+}
+
+.logo-links a:hover{
+  color: var(--primary-blue);
+}
+
+.logo-links-close{
+  font-size: 1.5rem;
+ /* color: var(--white1); */
+ height: 50px;
+ width: 50px;
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-25%, -20%);
+  /* border-radius: 100%; */
+  /* background-color: var(--primary-dark); */
+}
+
+.logo-links a:nth-child(1){
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -10%);
+}
+
+.logo-links a:nth-child(2){
+  right: 0;
+  top: 50%;
+  transform: translateY(-38%);
+}
+
+.logo-links a:nth-child(3){
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 20%);
+}
+
+.logo-links a:nth-child(4){
+  left: 0;
+  top: 50%;
+  transform: translateY(-38%);
+}
+
 
 #contact {
   display: flex;
@@ -949,6 +1022,9 @@ ul{
 }
 
 @media (max-width: 600px) {
+  .logo-links a{
+    font-size: 1.5rem;
+  }
   .padding-container, .work-popup {
     padding: 10% 5%;
   }

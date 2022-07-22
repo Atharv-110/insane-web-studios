@@ -1,5 +1,9 @@
 const contact_btn = document.getElementById("contact-btn");
 const contact_div = document.getElementById("contact-div");
+const logo_links_close = document.getElementById("logo-links-close");
+const logo_links_close_div = document.getElementById("logo-links");
+const logo_div = document.getElementById("logo-div");
+const logo_img = document.getElementById("logo-img");
 
 const home_div = document.getElementById("home");
 const close_btn = document.getElementById("close-btn"); // close for about section
@@ -34,6 +38,20 @@ function showContactDiv() {
     flag = true;
   }
 }
+
+// logo links show
+logo_img.addEventListener("click", ()=>{
+  logo_links_close_div.style.display="block";
+  logo_div.style.padding="10px";
+  logo_img.style.display="none";
+});
+
+// logo links hide
+logo_links_close.addEventListener("click", ()=>{
+  logo_div.style.padding="1rem";
+  logo_links_close_div.style.display="none";
+  logo_img.style.display="block";
+});
 
 // about section show
 about_btn.addEventListener("click", () => {
