@@ -48,15 +48,18 @@ ul{
   width: 50%;
   height: 100%;
   cursor: pointer;
-  transition: background-color 0.5s ease;
+  transition: all 0.5s ease;
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
 }
 
 .img img {
-  width: 100%;
+  display: block;
+  margin: auto;
+  /* width: 100%; */
   height: 100%;
 }
 
-#about {
+/* #about {
   background-color: var(--white1);
 }
 
@@ -67,10 +70,12 @@ ul{
 
 #blog {
   background-color: var(--white3);
-}
+} */
 
 .img:hover {
-  background-color: var(--primary-blue) !important;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  opacity: .5;
+  /* background-color: var(--primary-blue) !important; */
 }
 
 
@@ -91,8 +96,6 @@ ul{
 
 .logo img{
   width: 100%;
-  /* display: none; */
-  /* height: 100%; */
 }
 
 @keyframes logo-rotate{
@@ -1022,6 +1025,13 @@ ul{
 }
 
 @media (max-width: 600px) {
+  .img{
+    display: flex;
+    align-items: center;
+  }
+  .img img{
+    width: 100%;
+  }
   .logo-links a{
     font-size: 1.5rem;
   }
