@@ -711,7 +711,7 @@ ul{
 
 .service-card:hover{
   background-image: url(../images/service-card.png);
-  animation: service-card-animation 1s;
+  animation: service-card-animation 1s ease;
 }
 
 .service-card i{
