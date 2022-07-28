@@ -759,7 +759,13 @@ ul{
 }
 
 .process-card-info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
   margin-top: 2rem;
+  min-height: 220px;
+  /* background-color: red; */
+
   color: var(--grey-color);
 }
 
