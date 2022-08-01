@@ -519,6 +519,7 @@ ul{
 }
 
 .talk {
+  /* background: url("Webalar/insane-web-studios/assets/videos.video.mp4"); */
   background-color: var(--white3);
   height: 60vh;
   padding: 30px;
