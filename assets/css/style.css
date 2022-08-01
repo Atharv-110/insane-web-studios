@@ -7,6 +7,7 @@
   --white3: #dddddd;
   --primary-dark: #333333;
   --grey-color: grey;
+  --black-color:#000;
 }
 
 * {
@@ -519,8 +520,11 @@ ul{
 }
 
 .talk {
-  /* background: url("Webalar/insane-web-studios/assets/videos.video.mp4"); */
-  background-color: var(--white3);
+  background-image: url("../images/video.gif");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--black-color);
   height: 60vh;
   padding: 30px;
   display: flex;
@@ -535,6 +539,7 @@ ul{
   letter-spacing: 4px;
   padding-bottom: 50px;
   text-align: center;
+  color: var(--white1);
 }
 
  .btn {
