@@ -24,7 +24,7 @@ const blog_btn = document.getElementById("blog");
 const popup_btn = document.getElementById("popup-close-btn");
 const work_popup_div = document.getElementById("work-popup");
 const work_card = document.getElementsByClassName("work-card");
-const blog_pop = document.getElementById("blog-pop");
+const blog_pop = document.getElementsByClassName("blog-pop");
 
 // contact div show and hide
 var flag = true;
@@ -145,15 +145,20 @@ popup_btn.addEventListener("click", () => {
 for (let i = 0; i < blog_card.length; i++) {
   blog_card[i].addEventListener("click", () => {
     blog_section.style.display = "none";
-    blog_pop.style.display = "block";
+    blog_pop[i].style.display = "block";
     contact_btn.style.display = "none";
   });
 }
 //  blog popup hide
 for (let i = 0; i < blog_back.length; i++) {
-blog_back[i].addEventListener("click", () => {
+blog_back[2*i].addEventListener("click", () => {
   blog_section.style.display = "block";
-  blog_pop.style.display = "none";
+  blog_pop[i].style.display = "none";
+  contact_btn.style.display = "block";
+});
+blog_back[2*i+1].addEventListener("click", () => {
+  blog_section.style.display = "block";
+  blog_pop[i].style.display = "none";
   contact_btn.style.display = "block";
 });
 }

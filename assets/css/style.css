@@ -29,9 +29,9 @@ body {
   padding: 5% 10%;
 }
 
-ul{
+/* ul{
   list-style-position: inside;
-}
+} */
 
 #home {
   height: 100vh;
@@ -814,7 +814,7 @@ ul{
 
 
 .blog-image{
-  width: 450px;
+  width: 400px;
   /* height: 300px; */
 }
 
@@ -824,6 +824,7 @@ ul{
 }
 
 .blog-info{
+  width: calc(100% - 400px);
   padding: 1.5rem 1rem;
   line-height: 3;
 }
@@ -845,7 +846,7 @@ ul{
 /* Blog CSS end */
 
 /* Blog Pop CSS */
-#blog-pop{
+.blog-pop{
   display: none;
   padding: 5% 15%;
 }
@@ -885,7 +886,7 @@ ul{
 .pop-text h5{
   color: var(--primary-dark);
   font-weight: bold;
-  margin-bottom: 2rem;
+  margin: 2rem 0 1rem;
 }
 
 
@@ -1074,7 +1075,7 @@ ul{
     font-size: 1rem;
   }
 
-  #blog-pop{
+  .blog-pop{
     padding: 2rem 1rem;
   }
 
