@@ -712,13 +712,45 @@ body {
     background-position: right;
   }
   100%{
-    background-position: center;
+  background-position: center;
   }
 }
 
 .service-card:hover{
-  background-image: url(../images/service-card.png);
-  animation: service-card-animation 1s ease;
+  animation: service-card-animation 2s ease forwards;
+text-shadow: 0px 0px 50px white;
+}
+
+.service-card:hover p{
+  color: black;
+}
+
+.service-card:nth-child(1):hover{
+  background-image: url(../images/service1.png);
+}
+.service-card:nth-child(2):hover{
+  background-image: url(../images/service2.png);
+}
+.service-card:nth-child(3):hover{
+  background-image: url(../images/service3.png);
+}
+.service-card:nth-child(4):hover{
+  background-image: url(../images/service4.png);
+}
+.service-card:nth-child(5):hover{
+  background-image: url(../images/service5.png);
+}
+.service-card:nth-child(6):hover{
+  background-image: url(../images/service6.png);
+}
+.service-card:nth-child(7):hover{
+  background-image: url(../images/service1.png);
+}
+.service-card:nth-child(8):hover{
+  background-image: url(../images/service1.png);
+}
+.service-card:nth-child(9):hover{
+  background-image: url(../images/service1.png);
 }
 
 .service-card i{

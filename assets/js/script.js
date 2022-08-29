@@ -150,15 +150,21 @@ for (let i = 0; i < blog_card.length; i++) {
   });
 }
 //  blog popup hide
-for (let i = 0; i < blog_back.length; i++) {
+for (let i = 0; i < blog_back.length/2; i++) {
 blog_back[2*i].addEventListener("click", () => {
   blog_section.style.display = "block";
   blog_pop[i].style.display = "none";
   contact_btn.style.display = "block";
 });
-blog_back[2*i+1].addEventListener("click", () => {
+blog_back[2*i +1].addEventListener("click", () => {
   blog_section.style.display = "block";
   blog_pop[i].style.display = "none";
   contact_btn.style.display = "block";
 });
 }
+
+// service section hover images
+// const service_card= document.querySelectorAll(".service-card");
+// for(let i=0;i<service_card.length;i++){
+//   service_card[i].style.background='url("../images/pop1.jpg")';
+// }
