@@ -1,11 +1,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700;900&display=swap");
 
 :root {
-  --primary-blue: #2ca2c6;
+  --primary-blue: #075A8C;
+  --secondary-blue: #6195B7;
   --white1: #f9f9f9;
   --white2: #ebebeb;
   --white3: #dddddd;
-  --primary-dark: #333333;
+  --primary-dark: #4C4F4F;
   --grey-color: grey;
   --black-color:#000;
 }
@@ -500,8 +501,8 @@ body {
 }
 
 .client-logo {
-  height: 200px;
-  width: 250px;
+  height: 170px;
+  /* width: 200px; */
   margin: 0 30px;
 }
 
@@ -785,7 +786,7 @@ text-shadow: 0px 0px 50px white;
   line-height: 150px;
   font-size: 40px;
   border-radius: 100%;
-  background-color: var(--primary-blue);
+  background-color: var(--secondary-blue);
   transition: transform .7s;
   transform-style: preserve-3d;
 }
@@ -793,7 +794,7 @@ text-shadow: 0px 0px 50px white;
 .process-card:hover .process-flip{
   transform: rotateZ(360deg);
   background-color: var(--primary-dark);
-  color: var(--primary-blue);
+  color: var(--secondary-blue);
 }
 
 .process-card-info{
